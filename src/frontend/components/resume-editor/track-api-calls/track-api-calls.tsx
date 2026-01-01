@@ -10,7 +10,7 @@ function compareObjects(oldVal: any, newVal: any): boolean {
 
 const HELP_PROMPT_TIME = 5*60*1000
 
-function TrackApiCalls() {
+function TrackApiCalls(): null {
 	// overall loading
 	const [isLoading, setIsLoading] = useState(false)
 	// data watchers
@@ -56,6 +56,8 @@ function TrackApiCalls() {
 	// 		{isLoading ? "Loading" : 'Track'}
 	// 	</div>
 	// );
+
+	return null;
 }
 
 export default TrackApiCalls;
