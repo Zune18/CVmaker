@@ -1,0 +1,22 @@
+@import url("styles/colors.module.css");
+@import url("styles/scroll.module.scss");
+@import url('styles/modal.module.scss');
+@import url('styles/title-header.module.scss');
+@import url('styles/button.module.scss');
+@import url('styles/tooltip.module.scss');
+
+body {
+    color: var(--font-color);
+    background-color: black;
+    margin: 0 !important;
+}
+
+* {
+    font-family: 'Poppins', sans-serif !important;
+    box-sizing: border-box;
+}
+
+header {
+    display: block;
+    width: fit-content;
+}

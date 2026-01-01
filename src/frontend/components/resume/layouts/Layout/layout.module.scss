@@ -1,0 +1,80 @@
+.mainLayout {
+    --doc-width: 900px;
+	--doc-font-size: 1px;
+    background: var(--light);
+    width: var(--doc-width);
+    min-height: calc(1.41 * var(--doc-width));
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+	& * {
+		font-size: calc(calc(var(--doc-width) * 0.016) + var(--doc-font-size));
+		font-weight: 400;
+	}
+
+    /*    colors*/
+    color: var(--dark);
+
+
+}
+
+@media screen and (max-width: 1280px) {
+	.mainLayout {
+		--doc-width: 630px;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.mainLayout {
+		--doc-width: 480px;
+	}
+}
+
+.panelContainer {
+    display: flex;
+    flex-direction: row;
+    //border: 1px solid red;
+    flex: 1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.rightPanel {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftPanel {
+    display: flex;
+    flex-direction: column;
+    //border: 1px solid blue;
+}
+
+ul {
+    margin: 0;
+    height: available;
+    flex: 1;
+}
+
+.draggable {
+  cursor: move;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+
+  &:hover {
+    transition: 0.2s ease-in-out;
+    background: var(--dark-bg);
+    border: 1px solid var(--dark-bg);
+    border-radius: 2px;
+  }
+}

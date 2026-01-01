@@ -1,0 +1,66 @@
+.newSectionsList {
+	height: 100%;
+	font-size: 12px;
+
+	ul {
+		height: 100%;
+	}
+	.newSectionContainer {
+
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		border-radius: 4px;
+		padding: 5px;
+		margin: 10px 0;
+		cursor: move;
+
+		&:hover {
+			transition: 0.2s ease-in-out;
+			scale: 1.1;
+			color: white;
+			border-radius: 4px;
+			--border-size: 2px;
+			--border-angle: 0turn;
+			background-image: conic-gradient(
+							from var(--border-angle),
+							#213,
+							#112 50%,
+							#213
+			),
+			conic-gradient(from var(--border-angle), transparent 20%, #08f, #160631);
+			background-size: calc(100% - (var(--border-size) * 2))
+			calc(100% - (var(--border-size) * 2)),
+			cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+
+			animation: bg-spin 3s linear infinite;
+			@keyframes bg-spin {
+				to {
+					--border-angle: 1turn;
+				}
+			}
+
+		}
+		.sectionIcons{
+			display: flex;
+			align-items: center;
+            margin: 0 8px;
+
+		}
+		.sectionHeading {
+			text-transform: capitalize;
+		}
+
+
+	}
+
+}
+
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}

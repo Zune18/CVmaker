@@ -1,0 +1,169 @@
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	.title {
+		font-weight: 700;
+		width: fit-content;
+		font-weight: 700;
+
+		hr {
+			border: 1px solid;
+			margin-top: 0px;
+		}
+	}
+
+	.skillList {
+		display: flex;
+		width: fit-content;
+		flex-wrap: wrap;
+		min-height: 20px;
+
+		.skillelement {
+			margin-top: 5px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			width: fit-content;
+			border-radius: 6px;
+			padding: 3px 10px;
+			color: var(--light);
+			margin-right: 8px;
+		}
+
+		.emptySkillelement {
+		}
+	}
+}
+
+.skillListModalContainer {
+	height: 90%;
+}
+
+.modalTitle {
+	padding: 22px 27px;
+	background: #1e2840;
+	display: flex;
+	width: 100%;
+	color: var(--light);
+	flex-direction: column;
+}
+
+.inputGroup {
+	align-items: center;
+	display: flex;
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+
+	.inputBox {
+		flex: 1;
+		border-radius: 6px;
+
+	}
+
+	.modalAddButton {
+		height: 32px;
+		cursor: pointer;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: fit-content;
+		background-color: var(--bg-accent);
+		border-radius: 6px;
+		padding: 3px 10px;
+		margin: 3px 5px;
+		color: var(--light);
+	}
+}
+
+.listGroup {
+	align-items: center;
+	display: flex;
+	padding: 5px 20px;
+
+	.listItem {
+		flex: 1;
+		font-size: 0.7em;
+		color: var(--light);
+		border-radius: 6px;
+
+		.skillListItemInput {
+			padding-top: 8px !important;
+		}
+
+	}
+
+	.removeButton {
+
+		background: transparent;
+
+		.removeIcon {
+			// color: white;
+			color: var(--font-color);
+			width: 30px;
+			// background: transparent;
+		}
+	}
+}
+
+
+.saveButton {
+    cursor: pointer;
+    justify-content: center;
+    margin-left: 343px;
+    display: flex;
+    width: 80px;
+    background-color: var(--bg-accent);
+    border-radius: 6px;
+    padding: 3px 10px;
+    color: var(--light);
+}
+
+[class^="layoutBlock"]:hover .addButton {
+	display: flex;
+}
+
+.skillListModal {
+	height: 75%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.sectionToolBar {
+	position: absolute;
+	right: 0;
+	top: 2px;
+	transform: translateX(calc(100% - 5px));
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 20px;
+	width: 30px;
+	padding: 20px 0;
+	background-color: var(--dark-bg-secondary);
+	color: var(--light);
+	box-shadow: 2px 2px 10px 0px var(--dark-mask);
+	z-index: 10;
+
+	* {
+		font-size: 16px !important;
+	}
+
+	.addButton {
+		cursor: pointer;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+
+		.addButtonIcon {
+			width: 22px;
+		}
+	}
+}
+
+[class^="layoutBlock"]:hover .sectionToolBar {
+	display: flex;
+}

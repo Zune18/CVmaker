@@ -1,0 +1,24 @@
+.ant-modal-mask {
+    background-color: var(--bg-mask) !important;
+}
+
+.ant-modal-close {
+    color: var(--font-color) !important
+}
+
+.ant-modal-content {
+    background: var(--bg-color);
+    background-color: var(--dark-blue-2) !important;
+    color: var(--font-color) !important;
+    width: fit-content;
+}
+
+.ant-modal-header {
+    background-color: var(--bg-color) !important;
+    color: var(--font-color) !important;
+}
+
+.ant-modal-title {
+    background-color: var(--bg-color) !important;
+    color: var(--font-color) !important;
+}

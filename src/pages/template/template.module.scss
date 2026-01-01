@@ -1,0 +1,11 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .item {
+        width: 157px;
+        height: calc(1.14 * 157px);
+        overflow: hidden;
+    }
+}

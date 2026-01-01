@@ -1,0 +1,135 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        font-weight: 700;
+        width: fit-content;
+        font-weight: 700;
+
+        hr {
+            border: 1px solid;
+            margin-top: 0px;
+        }
+    }
+
+    .interestList {
+        display: flex;
+        width: fit-content;
+        flex-wrap: wrap;
+        min-height: 20px;
+
+        .interestelement {
+            margin-bottom: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: -moz-fit-content;
+            width: fit-content;
+            border-radius: 6px;
+            padding: 3px 10px;
+            color: black;
+            margin-right: 8px;
+            border: 1.5px solid rgb(127 127 127);
+            word-break: break-word;
+        }
+
+        .emptyinterestelement {
+        }
+    }
+}
+
+.modalHeaderContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #1e2840;
+    width: 100%;
+    padding: 16px;
+
+    .modalTitle {
+        font-size: 1em;
+        display: flex;
+        color: var(--light);
+        flex-direction: column;
+    }
+
+    .saveButton {
+        cursor: pointer;
+        justify-content: center;
+        display: flex;
+        width: 80px;
+        background-color: var(--bg-accent);
+        border-radius: 6px;
+        padding: 4px 8px;
+        font-size: 0.7em;
+        color: var(--light);
+    }
+}
+
+.inputGroup {
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px;
+    display: flex;
+
+    .inputBox {
+        border-radius: 6px;
+        width: 288px;
+
+        input {
+            padding: 10px 16px;
+        }
+    }
+
+    .modalAddButton {
+        height: 36px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: fit-content;
+        background-color: var(--bg-accent);
+        border-radius: 6px;
+        padding: 4px 12px;
+        margin: 3px 5px;
+        color: var(--light);
+    }
+}
+
+.listGroup {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background: #1e2840;
+    border-radius: 6px;
+    padding: 8px 16px;
+    margin-bottom: 12px;
+
+    .listItem {
+        font-size: 0.7em;
+        color: var(--light);
+        width: 70%;
+    }
+
+    .removeButton {
+        background: transparent;
+
+        .removeIcon {
+            color: var(--font-color);
+        }
+    }
+}
+
+
+[class^="layoutBlock"]:hover .addButton {
+    display: flex;
+}
+
+.interestListModal {
+    margin: 0 16px 16px 16px;
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

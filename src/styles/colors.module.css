@@ -1,0 +1,82 @@
+:root {
+    /* common */
+    --accent-color: rgb(76, 183, 152);
+    --black: #000;
+
+
+    /* dark */
+    --dark: rgb(0, 16, 37);
+    --dark-accent: var(--accent-color);
+    --dark-blue-bg: rgb(15, 19, 28);
+    --dark-bg: #00000;
+    --dark-bg-secondary: rgb(43, 66, 94);
+
+    /* mask */
+    --dark-mask: rgba(0, 0, 0, 0.5);
+    --dark-bg-mask: rgba(0, 15, 33, 0.5);
+    --dark-mask-1: rgba(0, 15, 33, 0.8);
+    --dark-mask-2: #2c2c2c;
+
+    --dark-hover-item-bg: rgb(56, 56, 56);
+
+    /*  light*/
+    --light: #FFF;
+    --light-accent: var(--accent-color);
+    --light-1: #d6d6d6;
+    --light-bg: #FFF;
+    --light-bg-secondary: #f3f3f3;
+
+    /* mask */
+    --light-mask: rgba(112, 112, 112, 0.4);
+    --light-mask-1: rgba(213, 213, 213, 0.8);
+    --light-mask-2: #e3e3e3;
+
+    --light-hover-item-bg: rgb(232, 232, 232);
+
+    /*  blues*/
+    --blue: #4285F4;
+    --dark-blue-1: #313ea9;
+    --dark-blue-2: #27355BFF;
+}
+
+
+.light {
+    --font-color: var(--dark);
+    --bg-color: var(--light-bg);
+    --bg-color-secondary: var(--light-bg-secondary);
+    --bg-accent: var(--light-accent);
+
+    /* mask */
+    --bg-mask: var(--dark-mask);
+    --bg-mask-1: var(--light-mask-1);
+    --bg-mask-2: var(--light-mask-2);
+
+
+    /*  button colors*/
+    --bg-register-button: var(--dark-blue-1);
+    --fc-regsiter-button: var(--light);
+
+    /* menu hover   */
+    --menu-item-hover-bg: var(--light-hover-item-bg)
+}
+
+.dark {
+    --font-color: var(--light);
+    --bg-color: var(--dark-bg);
+    --bg-blue-color: var(--dark-blue-bg);
+    --bg-color-secondary: var(--dark-bg-secondary);
+    --bg-accent: var(--dark-accent);
+
+    /* mask */
+    --bg-mask: var(--light-mask);
+    --bg-mask-1: var(--dark-mask-1);
+    --bg-mask-2: var(--dark-mask-2);
+
+
+    /*  button colors*/
+    --bg-register-button: var(--dark-blue-1);
+    --fc-regsiter-button: var(--light-1);
+
+    /* menu hover   */
+    --menu-item-hover-bg: var(--dark-hover-item-bg)
+}

@@ -1,0 +1,4 @@
+*.css
+*.scss
+locales
+src/frontend/components/resume/pdfViewer/Poppins

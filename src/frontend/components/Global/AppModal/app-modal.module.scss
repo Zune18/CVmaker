@@ -1,0 +1,23 @@
+.modalContainer {
+    width: 50%;
+}
+
+.left {
+    [class^="ant-modal-title"] {
+        text-align: left !important;
+    }
+}
+
+.center {
+    [class^="ant-modal-title"] {
+        text-align: center !important;
+        font-size: 18px;
+    }
+}
+
+.right {
+    [class^="ant-modal-title"] {
+        text-align: right !important;
+    }
+}
+

@@ -1,0 +1,89 @@
+.draggable {
+	cursor: move;
+	max-width: 100%;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+
+	&:hover {
+		transition: 0.2s ease-in-out;
+		background: var(--dark-bg);
+		border: 1px solid var(--dark-bg);
+		border-radius: 2px;
+	}
+}
+
+.notDraggable {
+	cursor: default;
+	padding: 0 !important;
+	border: none;
+
+	&:hover {
+		transform: none;
+		border: none;
+	}
+}
+
+.layoutBlock {
+	display: flex;
+	flex-direction: column;
+	cursor: default;
+	background-color: #FFFFFF;
+	max-width: 100%;
+	word-break: break-all;
+	white-space: normal;
+	margin: 0 0 0 10px;
+	padding-left: 10px;
+	position: relative;
+
+	.headerRow {
+		margin-bottom: 12px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-top: 10px;
+
+		.layoutBlockHeading {
+			text-transform: capitalize;
+			font-size: 1.2em;
+			font-weight: 600;
+			padding-right: 5px;
+			border-bottom: 2px solid var(--dark);
+
+		}
+
+		.menu {
+			flex-direction: row;
+			align-items: center;
+			padding: 0 10px;
+			display: none;
+
+			.btn {
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				margin: 0 10px;
+				justify-content: center;
+			}
+		}
+	}
+
+	&:hover .headerRow .menu {
+		display: flex;
+	}
+
+}
+
+.sectionEditModalBody {
+	padding: 10px 32px 0 32px;
+	width: 400px;
+
+	.inputRow {
+		margin-bottom: 15px;
+
+		input, label {
+			font-size: 16px;
+		}
+	}
+}
+
+

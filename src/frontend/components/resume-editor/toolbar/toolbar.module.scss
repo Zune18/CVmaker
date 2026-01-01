@@ -1,0 +1,113 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    z-index: 2;
+    position: fixed;
+    top: 2px;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 10px auto;
+    width: fit-content;
+    background-color: var(--bg-color-secondary);
+    box-shadow: 0 2px 12px 0 var(--dark);
+    padding: 5px 6px;
+    border-radius: 20px;
+
+	.settingsBtn {
+		margin: 0 10px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		cursor: pointer;
+
+		header {
+			margin-left: 5px;
+		}
+	}
+
+    .downloadBtn {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+        cursor: pointer;
+        width: fit-content;
+        background-color: var(--bg-accent);
+        border-radius: 20px;
+        padding: 5px 20px;
+		margin: 0 5px;
+        color: var(--light);
+
+		img {
+			width: 24px;
+			height: 24px;
+			margin-right: 5px;
+		}
+    }
+}
+
+.placeHolder {
+    height: 60px;
+}
+
+
+.settingModal {
+	width: 400px !important;
+	.heading {
+		font-size: 20px;
+		font-weight: 500;
+		border-bottom: 2px solid var(--font-color);
+		margin-bottom: 10px;
+	}
+
+	.modalBody {
+		margin: 20px 0;
+
+		.settingsRow {
+			padding: 10px 10px;
+			border-radius: 4px;
+			&:hover {
+				transition: 0.2s ease-in-out;
+				background-color: var(--bg-mask-2);
+			}
+		}
+
+		.selectColor {
+			width: 120px;
+
+			.colorBlock {
+				border-radius: 4px;
+				width: 60px;
+				height: 24px;
+			}
+
+		}
+
+	}
+
+
+	label {
+		font-size: 14px;
+	}
+}
+
+.colorBlock {
+	border-radius: 4px;
+	min-width: 80px;
+	height: 20px;
+}
+
+.appHeader {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+
+	.headerLink {
+		font-size: 18px;
+		font-weight: 500;
+	}
+}

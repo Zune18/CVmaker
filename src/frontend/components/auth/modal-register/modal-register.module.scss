@@ -1,0 +1,186 @@
+.modalContainer {
+    font-family: 'Roboto', sans-serif;
+    min-width: 600px !important;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+
+    .modalContainerInner {
+        font-family: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 680px;
+
+        .modalContainerInnerLeftPanel {
+            width: 50%;
+            border-bottom-left-radius: 8px;
+            border-top-left-radius: 8px;
+            margin: -28px -24px -20px -24px;
+            background-image: url('../../../../../public/assets/images/post-register/post-register-left-panel.png');
+        }
+
+        .modalContainerInnerRightPanel {
+            padding: 16px;
+            width: 50%;
+
+
+            .headerContainer {
+                display: flex;
+                flex-direction: column;
+
+                header:first-of-type {
+                    font-size: 28px;
+                    font-weight: 700;
+                }
+
+                header:nth-of-type(2) {
+                    margin-top: 5px;
+                    margin-bottom: 15px;
+                    font-size: 14px;
+                }
+            }
+
+            .inputFieldsGroup {
+                display: flex;
+                flex-direction: column;
+
+                .inputFields {
+                    padding: 10px 20px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    width: 300px;
+                    border-radius: 0;
+                }
+
+                .inputFieldFirst {
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+
+                .inputFieldLast {
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+            }
+
+            .signInGroup {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 10px 10px 0 10px;
+
+                header:nth-of-type(2) {
+                    cursor: pointer;
+                    color: var(--blue);
+                }
+            }
+
+            .googleLoginBtn {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-top: 20px;
+                width: 100%;
+                height: 40px;
+                background-color: var(--blue);
+                font-weight: 400;
+                font-size: 16px;
+                border-radius: 18px;
+                border: none;
+                color: var(--light);
+
+                img {
+                    width: 27px;
+                    height: 27px;
+                    margin-right: 14%;
+                    background-color: #FFFFFF;
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+
+}
+
+.register {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register a {
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.registerBtn {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: var(--bg-register-button);
+    color: var(--fc-regsiter-button);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 18px;
+    border: none;
+
+}
+
+
+.login button {
+    margin-top: 15px;
+    padding: 5px;
+    width: 100%;
+    font-size: 10px;
+    border-radius: 15px;
+    color: aliceblue;
+}
+
+
+.SignUp {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    font-size: 10px;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+
+    header {
+        align-items: center;
+        height: 2px;
+        flex: 1;
+        background-color: gray;
+        margin-top: 2px;
+    }
+
+    span {
+        margin: 0 10px;
+    }
+
+}
+
+.SocialMeadiaLogo {
+    display: flex;
+    justify-content: center;
+}
+
+.SocialMeadiaLogo button {
+    margin: 7px;
+    background-color: white;
+    border: 1px solid #ccc !important;
+    border-radius: 3px;
+
+}
+
+.SocialMeadiaLogo button:hover {
+    background-color: rgb(84, 84, 243);
+    border-radius: 5px;
+}

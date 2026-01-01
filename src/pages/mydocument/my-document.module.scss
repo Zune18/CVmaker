@@ -1,0 +1,195 @@
+.title {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    margin-top: 12px;
+
+    .CreatDocument button {
+        background: rgb(46, 126, 179);
+        color: #fff;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        display: flex;
+        border: 2px solid rgb(46, 126, 179);
+    }
+
+    .CreatDocument button:hover {
+        color: var(--font-color);
+        background: transparent;
+    }
+}
+
+.useTemplate:hover {
+    text-decoration: underline;
+}
+
+.fillDetails:hover {
+    text-decoration: underline;
+}
+
+
+.resumeList {
+    display: flex;
+    flex-wrap: wrap;
+
+    .resumeItem {
+        position: relative;
+        overflow: hidden;
+        margin: 20px;
+        box-shadow: 1px 4px 8px -1px var(--dark);
+        border-radius: 4px;
+
+        .docDetails {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to top, var(--dark-bg-mask), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            cursor: pointer;
+
+            .hoverEffect {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                overflow: hidden;
+                background-color: var(--dark-bg-secondary);
+                border-radius: 5px;
+                color: var(--light);
+                opacity: 0;
+                padding: 5px 10px;
+
+            }
+
+            .hoverEffectBg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 0;
+                height: 0;
+                border-radius: 50px;
+                background: var(--dark-bg-mask);
+            }
+
+            &:hover .hoverEffect {
+                opacity: 1;
+                transition: 0.5s ease-in-out;
+            }
+
+            &:hover .hoverEffectBg {
+                transition: 0.3s;
+            }
+
+            .info {
+                max-width: 100%;
+                width: 100%;
+                padding: 10px;
+
+                header {
+                    box-sizing: border-box;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 80%;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: var(--light);
+                    text-transform: capitalize;
+                }
+
+                header:nth-of-type(2) {
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: var(--light-1);
+                }
+            }
+
+        }
+    }
+}
+
+.resumeElements {
+
+
+    .resumePreviewAndId {
+        position: relative;
+        margin-bottom: 5vh;
+        margin-left: 5vh;
+        width: fit-content;
+        background-color: red;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.1);
+        //box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+
+        .resumeIdElements {
+            padding: 30px;
+            align-items: end;
+            justify-content: center;
+            display: flex;
+            position: absolute;
+            width: -webkit-fill-available;
+            height: -webkit-fill-available;
+            border-radius: 2px;
+            transition: all 0.01s ease-out;
+
+        }
+
+        .edit {
+            z-index: -100;
+            position: absolute;
+            background: transparent;
+        }
+
+        &:hover .edit {
+            z-index: 100;
+            cursor: pointer;
+            color: var(--font-color);
+        }
+
+        .resumeIdElements:hover .overlay {
+            transform: scale(20) translateZ(0);
+
+
+        }
+
+        .overlay {
+            width: 0px;
+            position: absolute;
+            height: 0px;
+            border-radius: 50%;
+            background: rgb(46 126 179 / 47%);
+            z-index: 0;
+            transition: 0.3s ease-out;
+        }
+
+
+        &:hover .overlay {
+            width: 150%;
+            height: 150%;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+    }
+
+
+}
+
+
+
+

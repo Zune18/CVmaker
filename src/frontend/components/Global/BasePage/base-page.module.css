@@ -1,0 +1,82 @@
+.container {
+    color: var(--font-color);
+    background: var(--bg-color);
+    min-height: 100vh;
+}
+
+.contact.contact{
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+}
+
+.contact.contact .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contact.contact .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+.contact.contact .container h2{
+    color: var(--white);
+}
+
+.contact.contact .newsletter .form-element{
+   color: aliceblue;
+}
+
+.contact.contact .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: var(--Josefin);
+    font-size: 1rem;
+    width: 74%;
+}
+
+.contact.contact .newsletter .form-element span{
+    background: var(--sky);
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+.contact.contact .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
+.contact.contact .follow div i{
+    color: var(--white);
+    padding: 0 .4rem;
+}
+
+.contact.contact .rights{
+    justify-content: center;
+    font-family: var(--Josefin);
+}
+
+footer.footer .rights h4 a{
+    color: var(--white);
+}
+
+.contact.contact .move-up{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+
+.contact.contact .move-up span{
+    color: var(--midnight);
+}
+
+.contact.contact .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}

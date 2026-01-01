@@ -1,0 +1,13 @@
+.link {
+    text-decoration: none;
+    color: var(--font-color);
+
+    &:hover {
+        cursor: pointer;
+    }
+
+
+    &:visited {
+        color: var(--font-color);
+    }
+}

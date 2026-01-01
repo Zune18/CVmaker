@@ -1,0 +1,33 @@
+.notificationCenter {
+  border: 1px solid red;
+  width: fit-content;
+  margin: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toastClassName {
+  padding: 8px;
+  height: fit-content;
+  min-height: 0;
+}
+
+.bodyClassName {
+  padding: 4px;
+  margin: 0;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  header {
+    color: #000;
+  }
+
+  p {
+    color: black;
+  }
+}
