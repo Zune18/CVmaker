@@ -1,14 +1,18 @@
 // environments
 const DevEnv = {
-	baseURL: 'http://localhost:8000'
+	baseURL: 'https://cvm-staging-api.onrender.com'
 };
 
 const StagingEnv = {
 	baseURL: 'https://cvm-staging-api.onrender.com'
 };
 
+// const ProdEnv = {
+// 	baseURL: 'http://localhost:8000'
+// };
+
 const ProdEnv = {
-	baseURL: 'http://localhost:8000'
+	baseURL: 'https://cvm-staging-api.onrender.com'
 };
 
 // if false api -> localhost
