@@ -1,10 +1,12 @@
 // environments
 const DevEnv = {
-	baseURL: 'https://cvm-staging-api.onrender.com'
+	baseURL: 'https://cvmakerbackend-gaxv.onrender.com'
 };
 
+// OLD - https://cvm-staging-api.onrender.com
+
 const StagingEnv = {
-	baseURL: 'https://cvm-staging-api.onrender.com'
+	baseURL: 'https://cvmakerbackend-gaxv.onrender.com'
 };
 
 // const ProdEnv = {
@@ -12,7 +14,7 @@ const StagingEnv = {
 // };
 
 const ProdEnv = {
-	baseURL: 'https://cvm-staging-api.onrender.com'
+	baseURL: 'https://cvmakerbackend-gaxv.onrender.com'
 };
 
 // if false api -> localhost
